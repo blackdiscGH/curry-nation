@@ -10,6 +10,4 @@ class ApplicationController < ActionController::Base
 	   @food_types = FoodType.all
 	   @cuisines = Cuisine.all
     end
-
-
 end
