@@ -73,7 +73,7 @@
         <div class="panel-heading">Food Preferences
         </div>
         <%  @food_preferences.each do |fp| %>
-          <p><%= fp.name%></p>
+          <p><%= link_to fp.name,recipes_path(preference: fp) %></p>
         <%end%>
       </div>
       
@@ -81,7 +81,7 @@
         <div class="panel-heading">Food Type
         </div>
           <% @food_types.each do |ft| %>
-            <p><%= ft.name%></p>
+            <p><%= link_to ft.name,recipes_path(type: ft) %></p>
           <%end%>
         </div>
         
@@ -89,7 +89,7 @@
           <div class="panel-heading">Cuisine
           </div>
           <% @cuisines.each do |c| %>
-            <p><%= c.name%></p>
+            <p><%= link_to c.name,recipes_path(category: c) %></p>
           <%end%>
         </div>
         
