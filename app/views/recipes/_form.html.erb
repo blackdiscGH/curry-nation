@@ -39,17 +39,16 @@
 
   <div class="form-group">
      <%= f.label :cuisine %><br>
-     <%= f.select(:cuisine_id,options_from_collection_for_select(Cuisine.all, :id,:name),{prompt:"Please Choose"},{class:"form-
-       control"})   %>
+     <%= f.select(:cuisine_id,options_from_collection_for_select(Cuisine.all, :id,:name),{prompt:"Please Choose"},{class:"form-control"})   %>
   </div>
 
   <div class="field">
     <%= f.label :ingredients %><br>
-    <%= f.text_area :ingredients %>
+    <%= f.text_area :ingredients,  cols: 80, rows: 5 %>
   </div>
   <div class="field">
     <%= f.label :procedure %><br>
-    <%= f.text_area :procedure %>
+    <%= f.text_area :procedure, cols: 80, rows: 7%>
   </div>
   <div class="actions">
     <%= f.submit %>
