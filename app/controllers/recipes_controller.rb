@@ -75,9 +75,5 @@ class RecipesController < ApplicationController
       params.require(:recipe).permit(:title, :cooking_time, :difficulty_level, :food_type_id, :food_preference_id, :cuisine_id, :ingredients, :procedure)
     end
 
-    def set_sidebar_values
-      sidebar_values()
-    end
-
 
 end
